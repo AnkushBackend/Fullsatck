@@ -1,0 +1,25 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+
+# Ignore VSCode and IDE config
+.vscode/
+.idea/
+
+# Ignore OneDrive sync files
+*.tmp
+*.lnk
+*.ini
+~$*
+
+# Ignore Git config locks
+.git/config.lock
