@@ -13,7 +13,7 @@ app.use(cors({
         "https://nsx29xpm-5173.inc1.devtunnels.ms"
     ],
     credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
@@ -40,7 +40,7 @@ mongoose.connect(process.env.MONGO_URL)
 
 // Routes
 app.use("/auth", require("./routes/auth"));
-app.use("/customer", require("./routes/customer"));
+app.use("/customers", require("./routes/customer"));
 app.use("/products", require("./routes/product"));
 app.use("/image", require("./routes/image"));
 app.use("/performa", require("./routes/performa"));

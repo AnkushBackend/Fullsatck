@@ -3,7 +3,7 @@ const router = express.Router();
 const Customer = require("../models/customer");
 const verifyToken = require("../middlewares/verifyToken");
 // Add Customer
-router.post("/", async(req, res) => {
+router.post("/create", async(req, res) => {
     try {
         const {
             names,
@@ -40,7 +40,7 @@ router.post("/", async(req, res) => {
         });
     }
 });
-// ✅ Get All Customers with group UUID
+//  Get All Customers with group UUID
 router.get("/getall", verifyToken, async(req, res) => {
     try {
         const customers = await Customer.find();

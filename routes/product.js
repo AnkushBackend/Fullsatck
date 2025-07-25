@@ -49,7 +49,7 @@ router.get('/getAll', verifyToken, async(req, res) => {
 
 
 //  Get Single Product
-router.get('/getProductById/:id', verifyToken, async(req, res) => {
+router.get('/getID/:id', verifyToken, async(req, res) => {
     try {
         const { id } = req.params;
         if (!mongoose.Types.ObjectId.isValid(id)) {
@@ -117,7 +117,7 @@ router.post('/replaceImage/:id', verifyToken, upload.single('image'), async(req,
 });
 
 // Only Data Update
-router.post('/update/:id/', verifyToken, async(req, res) => {
+router.post('/update/:id', verifyToken, async(req, res) => {
     try {
         const { id } = req.params;
         const { description, hsn_uom, uom, rate } = req.body;
