@@ -8,7 +8,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-    origin: ["https://vocal-parfait-1c8907.netlify.app/"],
+    origin: ["https://frontend-55ki.onrender.com"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"]
