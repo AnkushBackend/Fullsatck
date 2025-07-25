@@ -8,12 +8,9 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-    origin: [
-        "http://localhost:5173",
-        "https://nsx29xpm-5173.inc1.devtunnels.ms"
-    ],
+    origin: ["https://your-frontend-site.netlify.app"],
     credentials: true,
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
