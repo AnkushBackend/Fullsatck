@@ -8,7 +8,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-    origin: ["https://luminous-kashata-22d0d8.netlify.app/"],
+    origin: ["https://luminous-kashata-22d0d8.netlify.app"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"]
