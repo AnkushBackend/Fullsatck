@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const verifyToken = require("../middlewares/verifyToken");
 const upload = require("../middlewares/upload");
-const Quotation = require("../models/quotation");
+const Quotation = require("../models/Quotation");
 const InvoiceSetting = require("../models/InvoiceSetting");
 
 // Fields required while creating quotation (not for PDF upload)

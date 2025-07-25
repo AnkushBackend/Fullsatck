@@ -1,13 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const Product = require("../models/product");
-const Customer = require("../models/customer");
-const Supplier = require("../models/supplier");
+const Product = require("../models/Product");
+const Customer = require("../models/Customer");
+const Supplier = require("../models/Supplier");
 const Employee = require("../models/User");
-const Performa = require("../models/performa");
-const Quotation = require("../models/quotation");
-const PurchaseOrder = require("../models/purchase");
-const Task = require("../models/task");
+const Performa = require("../models/Performa");
+const Quotation = require("../models/Quotation");
+const PurchaseOrder = require("../models/Purchase");
+const Task = require("../models/Task");
 const verifyToken = require("../middlewares/verifyToken");
 
 //Dashboard Tiles Stats

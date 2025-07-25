@@ -4,7 +4,7 @@ require("dotenv").config();
 const express = require('express');
 const router = express.Router();
 const upload = require('../middlewares/upload');
-const Product = require('../models/product');
+const Product = require('../models/Product');
 const verifyToken = require('../middlewares/verifyToken');
 const mongoose = require('mongoose');
 

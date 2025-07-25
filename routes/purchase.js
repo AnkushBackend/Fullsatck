@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const verifyToken = require("../middlewares/verifyToken");
 const upload = require("../middlewares/upload");
-const Purchase = require("../models/purchase");
+const Purchase = require("../models/Purchase");
 const InvoiceSetting = require("../models/InvoiceSetting");
 const mongoose = require("mongoose");
 
