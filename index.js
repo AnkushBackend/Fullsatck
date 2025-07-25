@@ -8,11 +8,12 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-    origin: ["https://frontend-55ki.onrender.com"],
+    origin: "https://frontend-55ki.onrender.com",
     credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"]
 }));
+
 
 app.options('*', cors());
 // Middleware
