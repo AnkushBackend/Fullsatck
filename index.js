@@ -6,12 +6,14 @@ const methodOverride = require("method-override");
 const cors = require("cors");
 
 const app = express();
+
 app.use(cors({
-    origin: "https://frontend-55ki.onrender.com",
+    origin: "https://nsx29xpm-5173.inc1.devtunnels.ms",
     credentials: true
 }));
 
 app.options("*", cors());
+
 
 
 // Middleware
@@ -55,6 +57,14 @@ app.use("/dashboard", dashboardRoutes);
 
 
 app.get("/", (req, res) => {
+    res.send("Hello siddharth iam here");
+});
+
+// Start server
+const PORT = 2000;
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+});.get("/", (req, res) => {
     res.send("Hello siddharth iam here");
 });
 
