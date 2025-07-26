@@ -60,11 +60,8 @@ app.get("/", (req, res) => {
     res.send("Hello siddharth iam here");
 });
 
-// Start server
-const PORT = 2000;
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-});.get("/", (req, res) => {
+
+app.get("/", (req, res) => {
     res.send("Hello siddharth iam here");
 });
 
