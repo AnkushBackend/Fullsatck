@@ -8,7 +8,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-    origin: "https://nsx29xpm-5173.inc1.devtunnels.ms",
+    origin: "https://siddharth-frontend.onrender.com",
     credentials: true
 }));
 
